@@ -28,9 +28,9 @@ The default slot can be used to layer in a [Vue transition](https://vuejs.org/gu
 
 ```html
 <router-view>
-  <template #default={ component }>
+  <template #default="{ component }">
     <transition name="fade">
-      <component :is="Component" />
+      <component :is="component" />
     </transition>
   </template>
 </router-view>
