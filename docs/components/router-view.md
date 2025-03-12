@@ -30,7 +30,7 @@ The default slot can be used to layer in a [Vue transition](https://vuejs.org/gu
 <router-view>
   <template #default={ component }>
     <transition name="fade">
-      <component :is="Component" />
+      <component :is="component" />
     </transition>
   </template>
 </router-view>
